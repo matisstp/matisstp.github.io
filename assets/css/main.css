@@ -3449,3 +3449,116 @@ input[type="button"]:disabled,
     padding: 0;
   }
 }
+
+
+/* STYLE ROKU - SITE DE MATIS */
+
+/* Fond principal avec dégradé violet */
+body {
+    background: linear-gradient(
+        135deg,
+        #210B49 0%,
+        #46218B 35%,
+        #7541C8 70%,
+        #A77CEB 100%
+    );
+    background-attachment: fixed;
+    color: #F4ECFF;
+}
+
+/* Menu latéral */
+#header {
+    background: linear-gradient(
+        180deg,
+        #210B49,
+        #46218B,
+        #7541C8
+    );
+}
+
+/* Sections principales */
+#main > section {
+    background: transparent;
+    color: #F4ECFF;
+}
+
+/* Titres */
+h1, h2, h3, h4, h5, h6,
+#header h1 a {
+    color: #FFFFFF;
+}
+
+/* Texte et paragraphes */
+p, li {
+    color: #F0E5FF;
+}
+
+/* Liens */
+a {
+    color: #D5B7FF;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #FFFFFF;
+}
+
+/* Boutons */
+.button,
+input[type="submit"] {
+    background-color: #7541C8;
+    color: white !important;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+/* FOND MAUVE TAMISÉ - STYLE ROKU */
+
+/* Fond violet derrière les sections */
+#main {
+    background: linear-gradient(
+        135deg,
+        #2A1250 0%,
+        #59318C 55%,
+        #784FA8 100%
+    );
+}
+
+/* Sections avec effet translucide */
+#main > section {
+    background: linear-gradient(
+        135deg,
+        rgba(125, 85, 175, 0.40),
+        rgba(65, 30, 115, 0.65)
+    );
+    color: #F5EEFF;
+}
+
+/* Titres blancs et lavande */
+#main h1,
+#main h2,
+#main h3,
+#main h4 {
+    color: #FFFFFF;
+}
+
+/* Sous-titres */
+#main header.major p {
+    color: #E8D5FF;
+}
+
+/* Paragraphes lisibles */
+#main p,
+#main li {
+    color: #F3EAFF;
+}
+
+/* Liens */
+#main a {
+    color: #E0C5FF;
+}
+
+/* Bordures discrètes */
+#main > section {
+    border-color: rgba(220, 190, 255, 0.20);
+}
