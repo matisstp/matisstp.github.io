@@ -3562,3 +3562,41 @@ input[type="submit"] {
 #main > section {
     border-color: rgba(220, 190, 255, 0.20);
 }
+
+
+/* NOUVELLE TYPOGRAPHIE - MONTSERRAT */
+
+body,
+input,
+select,
+textarea,
+button {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Titres */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+/* Menu latéral */
+#header,
+#header a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Paragraphes */
+p, li {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+/* Réduire la taille du texte de présentation */
+
+#header p {
+    font-size: 14px;
+    line-height: 1.6;
+}
