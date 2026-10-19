@@ -3600,3 +3600,143 @@ p, li {
     font-size: 14px;
     line-height: 1.6;
 }
+
+/* =====================================
+   ANIMATIONS PERSONNALISÉES - MATIS
+   ===================================== */
+
+/* Animation d'apparition */
+@keyframes apparitionDouce {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation des titres */
+#main h1,
+#main h2,
+#main h3 {
+    animation: apparitionDouce 0.9s ease-out both;
+}
+
+/* Boutons interactifs */
+#main .button,
+#main input[type="submit"] {
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background-color 0.3s ease;
+}
+
+#main .button:hover,
+#main input[type="submit"]:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 8px 25px rgba(190, 140, 255, 0.35);
+}
+
+/* Images interactives */
+#main .image img {
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+#main .image {
+    overflow: hidden;
+}
+
+#main .image:hover img {
+    transform: scale(1.035);
+    filter: brightness(1.08);
+}
+
+/* Liens du menu latéral */
+#header nav a {
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+/* Accessibilité : réduire les animations */
+@media (prefers-reduced-motion: reduce) {
+    #main h1,
+    #main h2,
+    #main h3 {
+        animation: none;
+    }
+
+    #main .button,
+    #main input[type="submit"],
+    #main .image img,
+    #header nav a {
+        transition: none;
+    }
+}
+
+/* =====================================
+   SECTION MES INTÉRÊTS
+   ===================================== */
+
+/* Disposition des trois cartes */
+.interets-grille {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* Apparence des cartes */
+.interet-carte {
+    background: rgba(170, 125, 225, 0.25);
+    border: 1px solid rgba(230, 205, 255, 0.4);
+    border-radius: 16px;
+    padding: 22px;
+    transition: transform 0.3s ease,
+                background 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Animation au survol */
+.interet-carte:hover {
+    background: rgba(170, 125, 225, 0.40);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(25, 5, 55, 0.25);
+}
+
+/* Titres cliquables */
+.interet-carte summary {
+    cursor: pointer;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* Descriptions */
+.interet-carte p {
+    color: #F3EAFF;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-top: 15px;
+}
+
+/* Carte ouverte */
+.interet-carte[open] {
+    background: rgba(100, 55, 160, 0.65);
+}
+
+/* Adaptation aux téléphones */
+@media screen and (max-width: 900px) {
+    .interets-grille {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Accessibilité */
+@media (prefers-reduced-motion: reduce) {
+    .interet-carte {
+        transition: none;
+    }
+}
