@@ -3741,3 +3741,9 @@ p, li {
     }
 }
 
+/* Descriptions sous le nom dans la bande latérale */
+#header p {
+    font-size: 12px !important;
+    white-space: nowrap;
+    text-align: center;
+}
